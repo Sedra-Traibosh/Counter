@@ -1,0 +1,130 @@
+
+/* 
+
+img{
+    width: 200px;
+    height: 200px;
+    margin-top: 1000px;
+    margin-left: -1000px;
+    transition:all 1s ease;
+    -webkit-transition:all 1s ease;
+    -moz-transition:all 1s ease;
+    -ms-transition:all 1s ease;
+    -o-transition:all 1s ease;
+} */
+
+
+
+
+
+.divbig{
+    width: 600px;
+    height: 400px;
+    background-color: seagreen;
+    position: absolute;
+    margin-left: -300px;
+    left: 50%;
+    margin-top: -200px;
+    top: 50%;
+    
+    display: grid;
+    grid-auto-rows: minmax(66px,auto);
+    grid-template-columns: repeat(4,100px);
+    grid-template-areas:  
+    "p p p p"
+    ". . . ."
+    "div1 div2 div3 div4"
+    "pg1 pg2 pg3 pg4"
+    "foot foot foot foot"
+    ;
+    grid-gap: 10px;
+
+
+    justify-content: center;
+
+}
+
+.par{
+    grid-area: p;
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-family: monospace;
+    font-size: xx-large;
+}
+.div1{
+    grid-area: div1;
+    width: 83px;
+    height: 86px;
+    background-color: blanchedalmond;
+
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-family: fantasy;
+}
+.div2{
+    grid-area: div2;
+    width: 83px;
+    height: 86px;
+    background-color: blanchedalmond;
+
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-family: fantasy;
+}
+.div3{
+    grid-area: div3;
+    width: 83px;
+    height: 86px;
+    background-color: blanchedalmond;
+
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-family: fantasy;
+}
+.div4{
+    grid-area: div4;
+    width: 83px;
+    height: 86px;
+    background-color: blanchedalmond;
+
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-family: fantasy;
+}
+
+
+
+.pg1{
+    
+    margin: 0;
+    grid-area: pg1;
+}
+.pg2{
+    margin: 0;
+
+    grid-area: pg2;
+}
+.pg3{
+    margin: 0;
+
+    grid-area: pg3;
+}
+.pg4{
+    margin: 0;
+
+    grid-area: pg4;
+}
+
+
+
+.foot{
+    grid-area: foot;
+    text-align: center;
+
+
+}
